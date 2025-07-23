@@ -1,0 +1,56 @@
+# Node modules
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Build output
+dist/
+build/
+coverage/
+.vite/
+.next/
+out/
+.temp/
+.cache/
+.eslintcache
+
+# Environment variables
+.env
+.env.*
+!.env.example
+
+# Logs
+logs/
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE files
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+
+# Misc
+*.local
+*.swp
+
+# Test output
+test-output/
+jest-coverage/
+
+# Dependency directories
+bower_components/
+jspm_packages/
+
+# Bolt/Supabase (if any remain)
+.bolt/
+supabase/
+
+#
