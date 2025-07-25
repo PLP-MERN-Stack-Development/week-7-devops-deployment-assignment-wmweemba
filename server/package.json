@@ -6,9 +6,9 @@
   "scripts": {
     "dev": "ts-node-dev src/server.ts",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "tsc", // This compiles your TypeScript
-    "start": "node dist/server.js", // This runs your compiled JavaScript server
-    "dev": "ts-node-dev --respawn src/server.ts" // Your development script
+    "build": "tsc",
+    "start": "node dist/server.js",
+    "dev": "ts-node-dev --respawn src/server.ts"
   },
   "keywords": [],
   "author": "",
