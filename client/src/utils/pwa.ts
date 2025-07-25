@@ -1,4 +1,4 @@
-/ Registers the service worker for offline capabilities and caching.
+// Registers the service worker for offline capabilities and caching.
 export function registerServiceWorker() {
   // Check if the browser supports service workers.
   if ('serviceWorker' in navigator) {
