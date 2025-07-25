@@ -22,3 +22,5 @@ const PaymentSchema: Schema = new Schema<IPayment>(
   },
   { timestamps: true }
 );
+
+export default mongoose.model<IPayment>('Payment', PaymentSchema);

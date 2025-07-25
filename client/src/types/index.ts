@@ -1,23 +1,24 @@
 export interface User {
-  id: string;
+  _id: string;
   username: string;
   email: string;
   role: 'admin' | 'user';
   createdAt: string;
+  updatedAt: string;
 }
 
 export interface Borrower {
-  id: string;
-  name: string;
-  phone: string;
-  address: string;
-  email?: string;
-  joiningDate: string;
-  status: 'active' | 'inactive';
-  totalLoans: number;
-  totalOutstanding: number;
-  createdAt: string;
-  updatedAt: string;
+    _id: string; // Changed from 'id' to '_id' to match MongoDB
+    name: string;
+    phone: string;
+    address: string;
+    email?: string;
+    joiningDate: string; // Keep as string for ISO date format from backend
+    status: 'active' | 'inactive';
+    totalLoans: number;
+    totalOutstanding: number;
+    createdAt: string; // Added to match backend
+    updatedAt: string; // Added to match backend
 }
 
 export interface LoanDuration {
@@ -26,7 +27,7 @@ export interface LoanDuration {
 }
 
 export interface Loan {
-  id: string;
+  _id: string;
   borrowerId: string;
   borrowerName: string;
   principal: number;
@@ -48,7 +49,7 @@ export interface Loan {
 }
 
 export interface Payment {
-  id: string;
+  _id: string;
   loanId: string;
   borrowerId: string;
   amount: number;
@@ -59,7 +60,7 @@ export interface Payment {
 }
 
 export interface AccountBalance {
-  id: string;
+  _id: string;
   availableBalance: number;
   totalDisbursed: number;
   totalCollected: number;
@@ -68,7 +69,7 @@ export interface AccountBalance {
 }
 
 export interface BalanceTransaction {
-  id: string;
+  _id: string;
   type: 'deposit' | 'disbursement' | 'collection';
   amount: number;
   description: string;
